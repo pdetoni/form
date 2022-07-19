@@ -3,6 +3,7 @@ document.exm01.addEventListener(`submit`, submitListener);
 function criaElemento(cor, altura, largura){
     const enovo = document.createElement("div");
     enovo.textContent=`${cor} ${altura} ${largura} ${altura + largura}` ;
+    enovo.style=`color: ${cor};}`
     document.body.appendChild(enovo);
 }
 
