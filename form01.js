@@ -17,9 +17,9 @@ function criaElemento(cor, altura, largura){
 
 function submitListener(event){
     event.preventDefault();
-             estado_cor = document.exm01.cor.value,
-             estado_altura = Number(document.exm01.altura.value),
-             estado_largura = Number(document.exm01.largura.value)
+             estado.cor = document.exm01.cor.value,
+             estado.altura = Number(document.exm01.altura.value),
+             estado.largura = Number(document.exm01.largura.value)
 
              criaElemento(estado.cor, estado.altura, estado.largura);
              
