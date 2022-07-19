@@ -1,3 +1,9 @@
+let estado = {
+cor: "#000000",
+altura:0,
+largura:0,
+};
+
 document.exm01.addEventListener(`submit`, submitListener);  
 
 function criaElemento(cor, altura, largura){
@@ -11,10 +17,11 @@ function criaElemento(cor, altura, largura){
 
 function submitListener(event){
     event.preventDefault();
-criaElemento(
-                    document.exm01.cor.value,
-             Number(document.exm01.altura.value),
-             Number(document.exm01.largura.value)
-             );
+             estado_cor = document.exm01.cor.value,
+             estado_altura = Number(document.exm01.altura.value),
+             estado_largura = Number(document.exm01.largura.value)
+
+             criaElemento(estado.cor, estado.altura, estado.largura);
+             
       document.exm01.reset();
 }
