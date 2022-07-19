@@ -5,17 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form 01</title>
+    <script src="form01.js" defer></script>
 </head>
 <body>
     <h1>Form 01</h1>
     <form name="exm01" id="form1">
-        <label for="cor">Cor</label>
-    <input id="cor" name="cor"/>
-    <label for="altura">Altura</label>
-    <input id="altura" name="altura"/>
-    <label for="largura">Largura</label>
-    <input id="largura" name="largura"/>
+        <div>
+            <label for="cor">Cor</label>
+                <input id="cor" name="cor" placeholder="Digite uma cor" value="Amarelo"/>
+        </div>
+
+        <div>
+            <label for="altura">Altura</label>
+        <input id="altura" name="altura" placeholder="Digite uma altura" value="2"/>
+        </div>
+
+        <div>
+            <label for="largura">Largura</label>
+        <input id="largura" name="largura" placeholder="Digite uma largura" value="3"/>
+        </div>
+
     <input type="submit" value="Enviar"/>
+    <input type="reset" value="Redefinir"/>
 
     </form>
     
